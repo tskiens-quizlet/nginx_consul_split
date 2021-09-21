@@ -3,7 +3,7 @@
 		{
 			"type": "keyprefix",
 			"prefix": "app_config/nginx_config",
-			"handler": "/opt/consul/templates/update_template.sh _etc_nginx_nginx.conf /etc/nginx/nginx.conf root root 0644 'systemctl reload-if-exists nginx_primary' 'none' watch >> /var/log/consul/watches/templated_file_etc_nginx_nginx.conf.log 2>&1"
+			"handler": "/opt/consul/templates/update_template.sh _etc_nginx_nginx.conf /etc/nginx/nginx.conf root root 0644 'systemctl reload-if-exists nginx' 'none' watch >> /var/log/consul/watches/templated_file_etc_nginx_nginx.conf.log 2>&1"
 		}
 	]
 }
